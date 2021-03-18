@@ -1,0 +1,1040 @@
+{
+  "intents": [
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Can you show me the menu?"
+        },
+        {
+          "text": "What are the offers you are having ?"
+        },
+        {
+          "text": "What are the special items do you have?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "ge"
+        },
+        {
+          "text": "gm"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "HI"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Order",
+      "examples": [
+        {
+          "text": "Can you place me order."
+        },
+        {
+          "text": "I want to place a order."
+        },
+        {
+          "text": "Please take the order."
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "address",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Adr",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "I'd",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "Id",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        },
+        {
+          "type": "patterns",
+          "value": "Mail",
+          "patterns": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Menu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Offers",
+          "synonyms": [
+            "Offer"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Special Items",
+          "synonyms": [
+            "Special",
+            "Specials"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good afternoon",
+          "synonyms": [
+            "gud aftern"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good evening",
+          "synonyms": [
+            "ge",
+            "gud even",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good morrning",
+          "synonyms": [
+            "gm",
+            "gud mrng"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chilly Paneer Gravy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Manchurian Gravy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mix. Veg. in Hot Garlic Sauce",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Shreded Potatoes in Hot Garlic Sauce",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sweet & Sour Veg.",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Menu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chana Kaju",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gujarati thali",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kaju Butter Masala",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kaju Kari",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Maithi Malai Mutte",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Malai Kofta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mashroom Kaju",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mashroom Masala",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mashroom Palak",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mashroom Paneer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Navratan Kofta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paneer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paneer Achari",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paneer Bhurji",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paneer Kofta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Paneer Patiyala",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Panjabi thali",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Roti",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sahi thali",
+          "synonyms": [
+            "Per thali"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Sev Tomato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "South Indian thali",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Special thali",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Stuffed Tamato Stuffed Capsicum",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Veg Kada",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Veg Kofta",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Order",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Order",
+          "synonyms": [
+            "orders"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": [
+            "Case"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Credit card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Debit Card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": [
+            "Amazon pay",
+            "Google pay",
+            "Phon pay"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://www.fast2sms.com/dev/bulkV2",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "authorization",
+          "value": "wdk9reIPl8iXgO7mxUYVsLtZ25qEybzAaTnoRjFMDKCNf3WJpvAMfjIoer5NqFQhEPbJ3n2LuX1Ucxpm"
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_3_1615910056987",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1615915432266",
+      "context": {
+        "number_2": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_1_1615915432270"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you provide me items you want ?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1615913046703",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1615913046706",
+      "previous_sibling": "handler_9_1615913046706"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1615913272358",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1615913272361"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accept payment by COD , UPI, Credit card, Debit card."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1615913432248",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1615913432255",
+      "previous_sibling": "handler_8_1615913432255"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you please give me your address & number."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1615915432266",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1615915432270",
+      "previous_sibling": "handler_1_1615915432270"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1615913432248",
+      "context": {
+        "Payment": "@Payment"
+      },
+      "conditions": "@Payment",
+      "event_name": "input",
+      "dialog_node": "handler_8_1615913432255"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1615913046703",
+      "context": {
+        "Menu": "@Menu"
+      },
+      "conditions": "@Menu",
+      "event_name": "input",
+      "dialog_node": "handler_9_1615913046706"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many do you want"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1615913272358",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1615913272361",
+      "previous_sibling": "handler_2_1615913272361"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @Enquiry",
+      "dialog_node": "node_1_1615827217628",
+      "previous_sibling": "node_6_1615807128994"
+    },
+    {
+      "type": "standard",
+      "title": "Specials",
+      "parent": "node_1_1615827217628",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Items",
+      "dialog_node": "node_1_1615831937409",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you order of $Menu , $number quantity , is placed please pay your order with $Payment . The invoice sent to $number_2 "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Order || @Order || @Enquiry",
+      "dialog_node": "node_3_1615910056987",
+      "previous_sibling": "node_1_1615827217628"
+    },
+    {
+      "type": "standard",
+      "title": "Message node",
+      "parent": "node_3_1615910056987",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "route": "q",
+            "message": "Thank you order of $Menu , $number quantity , is placed please pay your order with $Payment . The invoice sent to $number_2 ",
+            "numbers": "$number_2",
+            "language": "english",
+            "sender_id": "FSTSMS"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_9_1615916659354"
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1615923209367"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_6_1615807128994",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you your mail I'd is $email . How may I help you."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_9_1615891870568"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting context variable",
+      "output": {
+        "deleted": "<?context.remove('Menu')?><?context.remove('number')?><?context.remove('number_2')?><?context.remove('Payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1615910056987",
+      "conditions": "true",
+      "dialog_node": "node_9_1615916659354",
+      "previous_sibling": "node_5_1615923209367"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1615831937409",
+      "conditions": "@Items:(Mix. Veg. in Hot Garlic Sauce)",
+      "dialog_node": "response_10_1615832210313",
+      "previous_sibling": "response_7_1615831996218"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sure this is the menu we offer"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Menu",
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvdeqdX1d0o1_WHg40HBAvfIuVVYh3RTxGtUyL6x42isPPmJC5Lbw7KEE&s=10",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1615827217628",
+      "conditions": "@Enquiry:Menu",
+      "dialog_node": "response_3_1615827293007",
+      "previous_sibling": "node_1_1615831937409"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Special Items",
+            "options": [
+              {
+                "label": "Chilly Paneer Gravy\t₹205/- ",
+                "value": {
+                  "input": {
+                    "text": "you like it. Please order @sys-number"
+                  }
+                }
+              },
+              {
+                "label": " Manchurian Gravy\t₹175/- ",
+                "value": {
+                  "input": {
+                    "text": "you like it. Please order @sys-number"
+                  }
+                }
+              },
+              {
+                "label": "Sweet & Sour Veg.\t₹175/- ",
+                "value": {
+                  "input": {
+                    "text": "you like it. Please order @sys-number"
+                  }
+                }
+              },
+              {
+                "label": "Mix. Veg. in Hot Garlic Sauce\t ₹185/-",
+                "value": {
+                  "input": {
+                    "text": "you like it. Please order @sys-number"
+                  }
+                }
+              },
+              {
+                "label": "Shreded Potatoes in Hot Garlic Sauce\t₹153/-",
+                "value": {
+                  "input": {
+                    "text": "you like it. Please order @sys-number"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1615827217628",
+      "conditions": "@Enquiry:(Special Items)",
+      "dialog_node": "response_3_1615829608652",
+      "previous_sibling": "response_4_1615828569705"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good morning🙂 . How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1615807128994",
+      "conditions": "@Greetings:(Good morrning)",
+      "dialog_node": "response_4_1615807547719"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good afternoon🙂 . How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1615807128994",
+      "conditions": "@Greetings:(Good afternoon)",
+      "dialog_node": "response_4_1615825174488",
+      "previous_sibling": "response_4_1615807547719"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "5% off pay on Google pay"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "10% off Visa debit card"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "20% of Axis Bank credit card"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1615827217628",
+      "conditions": "@Enquiry:Offers",
+      "dialog_node": "response_4_1615828569705",
+      "previous_sibling": "response_3_1615827293007"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1615831937409",
+      "conditions": "@Items:(Shreded Potatoes in Hot Garlic Sauce)",
+      "dialog_node": "response_4_1615832226138",
+      "previous_sibling": "response_10_1615832210313"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good evening🙂 . How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1615807128994",
+      "conditions": "@Greetings:(Good evening)",
+      "dialog_node": "response_5_1615825243830",
+      "previous_sibling": "response_4_1615825174488"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1615831937409",
+      "conditions": "@Items:(Manchurian Gravy)",
+      "dialog_node": "response_6_1615832243928",
+      "previous_sibling": "response_4_1615832226138"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1615831937409",
+      "conditions": "@Items:(Chilly Paneer Gravy)",
+      "dialog_node": "response_6_1615832263976",
+      "previous_sibling": "response_6_1615832243928"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1615831937409",
+      "conditions": "@Items:(Sweet & Sour Veg.)",
+      "dialog_node": "response_7_1615831996218"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "message sent"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1615923209367",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_7_1615923244421"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_5_1615923209367",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1615923247586",
+      "previous_sibling": "response_7_1615923244421"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello How may I assist you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1615807128994",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1615825379504",
+      "previous_sibling": "response_5_1615825243830"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615910056987",
+      "variable": "$number_2",
+      "dialog_node": "slot_2_1615915432266",
+      "previous_sibling": "slot_4_1615913432248"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615910056987",
+      "variable": "$number",
+      "dialog_node": "slot_3_1615913272358",
+      "previous_sibling": "slot_5_1615913046703"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615910056987",
+      "variable": "$Payment",
+      "dialog_node": "slot_4_1615913432248",
+      "previous_sibling": "slot_3_1615913272358"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1615910056987",
+      "variable": "$Menu",
+      "dialog_node": "slot_5_1615913046703",
+      "previous_sibling": "node_9_1615916659354"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there! I'm the Shivam-restro friendly bot. We love having with us. I am a Shivam -restro chatbot of capable  of showing menu , offers , place order, specials . What do you want me to do?\nCan you please provide your mail I'd for future reference."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Restro-Assistant",
+  "language": "en",
+  "description": ""
+}
